@@ -1,0 +1,4 @@
+/Source/.vs
+/Source/Server/.vs
+**/bin/**
+**/obj/**
