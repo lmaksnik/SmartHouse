@@ -1,6 +1,6 @@
 D:\Users\m\AppData\Local\Temp\VMBuilds\SHMicroNodeMcu\esp8266_nodemcuv2\Debug\SHMicroNodeMcu.cpp.o: \
  D:\Users\m\AppData\Local\Temp\VMBuilds\SHMicroNodeMcu\esp8266_nodemcuv2\Debug\SHMicroNodeMcu.cpp \
- D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Arduino.h \
+ D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/arduino.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/stdlib_noniso.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/binary.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/esp8266_peri.h \
@@ -23,6 +23,7 @@ D:\Users\m\AppData\Local\Temp\VMBuilds\SHMicroNodeMcu\esp8266_nodemcuv2\Debug\SH
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Printable.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/uart.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Esp.h \
+ D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Arduino.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/Updater.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/flash_utils.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\cores\esp8266/MD5Builder.h \
@@ -56,4 +57,4 @@ D:\Users\m\AppData\Local\Temp\VMBuilds\SHMicroNodeMcu\esp8266_nodemcuv2\Debug\SH
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WebServer\src/detail/RequestHandler.h \
  D:\Users\m\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.3.0\libraries\ESP8266WiFi\src/WiFiClient.h \
  D:\Users\m\Documents\Arduino\libraries\DHT_sensor_library/DHT.h \
- D:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Enterprise\Common7\IDE\Extensions\pbd1usl1.2ll\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h
+ D:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Enterprise\Common7\IDE\Extensions\xaohtdp2.q2m\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h

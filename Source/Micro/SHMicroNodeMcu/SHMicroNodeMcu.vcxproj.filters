@@ -18,10 +18,10 @@
     <None Include="SHMicroNodeMcu.ino" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="__vm\.SHMicroNodeMcu.vsarduino.h">
+    <ClInclude Include="SHWebServer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SHWebServer.h">
+    <ClInclude Include="__vm\.SHMicroNodeMcu.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

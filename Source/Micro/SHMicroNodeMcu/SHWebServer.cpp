@@ -104,7 +104,9 @@ String* SHWebServerClass::deserializeArgs(String input)
 
 String SHWebServerClass::buildResponse(SHResponse response)
 {
-	String str = "{success: ";
+	return response.toJson();
+
+	/*String str = "{success: ";
 	if (response.success)
 	{
 		str += "true";
@@ -113,7 +115,7 @@ String SHWebServerClass::buildResponse(SHResponse response)
 		str += "false";
 	}
 	str += ", data:\"" + response.data + "\", error:\"" + response.error+ "\", crypto: \"SDFKJDFKJDHF\"}";
-	return str;
+	return str;*/
 }
 
 bool SHWebServerClass::validateHeader()
@@ -161,42 +163,3 @@ void SHWebServerClass::init(){}
 
 
 SHWebServerClass SHWebServer;
-
-
-/*String result = "";
-result = result + "Server.hostHeader - ";
-result = result + Server.hostHeader() + "\n";
-
-result = result + "Server.uri - ";
-result = result + Server.uri() + "\n";
-
-if (Server.args() > 0)
-{
-result = result + "Request arguments:\n";
-for (int i = 0; i < Server.args(); ++i)
-{
-String argName = Server.argName(i);
-String argValue = Server.arg(i);
-
-result = result + "    " + argName + " - ";
-
-result = result + argValue + "\n";
-
-}
-}
-
-if (Server.headers() > 0)
-{
-result = result + "Headers:\n";
-for (int i = 0; i < Server.headers(); ++i)
-{
-String argName = Server.headerName(i);
-String argValue = Server.header(i);
-
-result = result + "    " + argName + " - ";
-
-result = result + argValue + "\n";
-
-}
-}
-Server.send(200, "text/plain", "onHandleRoot\n" + result);*/

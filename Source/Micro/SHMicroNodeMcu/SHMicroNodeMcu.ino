@@ -24,12 +24,21 @@ SHResponse CmdHelloHandler(const String command, String* args) {
 		return SHResponse(true, "This command Hello!!! :-)");
 	}
 	if (command == "temp" || command == "temperature") {
-		float h = dht.readHumidity();
-		float t = dht.readTemperature();
+		//float h = dht.readHumidity();
+		//float t = dht.readTemperature();
+		float h = 53.69;
+		float t = 27.56;
 
-		String result = "Humidity: " + String(h) + "% Temperature: " + String(t) + "C";
-		Serial.println(result);
-		return SHResponse(true, result);
+		JsonClass json = JsonClass();
+		json.beginObject();
+		json.addProperty("humidity");
+		json.addPropertyValue(h);
+		json.addProperty("temperature");
+		json.addPropertyValue(t);
+		json.endObject();
+
+		Serial.println(json.toString());
+		return SHResponse(true, json.toString());
 	}
 	return SHResponse(false, "Command not found!");
 }

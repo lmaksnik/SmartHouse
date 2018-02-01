@@ -11,6 +11,50 @@
 #include <ESP8266WebServer.h>
 #include <functional>
 
+class JsonClass
+{
+public:
+	void beginObject() {
+		_str += "{";
+	}
+	void endObject() {
+		if (_str.endsWith(","))
+			_str.remove(_str.length() - 1, 1);
+		_str += "}";
+	}
+	void addProperty(String name) {
+		if (name != nullptr && name.length() > 0)
+			_str += "\"" + name + "\":";
+	}
+	void addPropertyValue(const String value) {
+		if (value == nullptr)
+			_str += "null,";
+		else _str += "\"" + value + "\",";
+	}
+	void addPropertyValue(char* value) {
+		_str += String(value) + ",";
+	}
+	void addPropertyValue(const float value) {
+		_str += String(value) + ",";
+	}
+	void addPropertyValue(bool value) {
+		if (value)
+			_str += "true,";
+		else
+			_str += "false,";
+	}
+	void addPropertyJObject(const String jsonObject) {
+		if (jsonObject == nullptr)
+			_str += "null,";
+		else
+			_str += jsonObject + ",";
+	}
+	String toString() const {
+		return _str;
+	}
+protected:
+	String _str = "";
+};
 
 class SHResponse
 {
@@ -25,6 +69,23 @@ public:
 	bool success;
 	String data;
 	String error;
+
+	String toJson() const
+	{
+		JsonClass json = JsonClass();
+		json.beginObject();
+		json.addProperty("success");
+		json.addPropertyValue(this->success);
+		json.addProperty("data");
+		if (data != nullptr && data.startsWith("{"))
+			json.addPropertyJObject(this->data);
+		else
+			json.addPropertyValue(this->data);
+		json.addProperty("error");
+		json.addPropertyValue(this->error);
+		json.endObject();
+		return json.toString();
+	}
 };
 
 class SHWebServerClass
