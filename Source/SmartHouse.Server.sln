@@ -5,11 +5,21 @@ VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHouse.Server.Web", "Server\SmartHouse.Server.Web\SmartHouse.Server.Web.csproj", "{1A03FAA6-06FD-48BD-BBFE-8C03046A49DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHouse.Server.Common", "Server\SmartHouse.Server.Common\SmartHouse.Server.Common.csproj", "{59B4DB1D-0A11-451F-A8F6-34D67C2587D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHouse.Server.Common", "Server\SmartHouse.Server.Common\SmartHouse.Server.Common.csproj", "{59B4DB1D-0A11-451F-A8F6-34D67C2587D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHouse.Server.Data", "Server\SmartHouse.Server.Data\SmartHouse.Server.Data.csproj", "{8065DECF-EF07-4387-97D7-E7A9228A6C22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHouse.Server.Data", "Server\SmartHouse.Server.Data\SmartHouse.Server.Data.csproj", "{8065DECF-EF07-4387-97D7-E7A9228A6C22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHouse.Server.Core", "Server\SmartHouse.Server.Core\SmartHouse.Server.Core.csproj", "{FADE1FAB-5A83-4CB5-8922-9EC6F70F673A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHouse.Server.Core", "Server\SmartHouse.Server.Core\SmartHouse.Server.Core.csproj", "{FADE1FAB-5A83-4CB5-8922-9EC6F70F673A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHouse.Server.Cmd", "Server\SmartHouse.Server.Cmd\SmartHouse.Server.Cmd.csproj", "{8683EC23-2456-41A2-8B21-C667515BBE9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MX", "MX", "{186F9095-9ADE-43F6-AA1F-DAA843DE065B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mx.Common", "..\..\..\MX\git\Sources\Mx.Common\Mx.Common.csproj", "{D3D215C1-4CAD-4E3C-B987-D5A0474A67CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mx.Net.Core", "..\..\..\MX\git\Sources\Mx.Net.Core\Mx.Net.Core.csproj", "{E06BBDAC-90FE-4D97-86A7-38CB4EF5ADB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mx.Net.Core.Web", "..\..\..\MX\git\Sources\Mx.Net.Core.Web\Mx.Net.Core.Web.csproj", "{97B8AECF-841B-4A74-ADDB-0C5567D8382E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +43,30 @@ Global
 		{FADE1FAB-5A83-4CB5-8922-9EC6F70F673A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FADE1FAB-5A83-4CB5-8922-9EC6F70F673A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FADE1FAB-5A83-4CB5-8922-9EC6F70F673A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8683EC23-2456-41A2-8B21-C667515BBE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8683EC23-2456-41A2-8B21-C667515BBE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8683EC23-2456-41A2-8B21-C667515BBE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8683EC23-2456-41A2-8B21-C667515BBE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D215C1-4CAD-4E3C-B987-D5A0474A67CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D215C1-4CAD-4E3C-B987-D5A0474A67CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D215C1-4CAD-4E3C-B987-D5A0474A67CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D215C1-4CAD-4E3C-B987-D5A0474A67CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E06BBDAC-90FE-4D97-86A7-38CB4EF5ADB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06BBDAC-90FE-4D97-86A7-38CB4EF5ADB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06BBDAC-90FE-4D97-86A7-38CB4EF5ADB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06BBDAC-90FE-4D97-86A7-38CB4EF5ADB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B8AECF-841B-4A74-ADDB-0C5567D8382E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B8AECF-841B-4A74-ADDB-0C5567D8382E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B8AECF-841B-4A74-ADDB-0C5567D8382E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B8AECF-841B-4A74-ADDB-0C5567D8382E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D3D215C1-4CAD-4E3C-B987-D5A0474A67CE} = {186F9095-9ADE-43F6-AA1F-DAA843DE065B}
+		{E06BBDAC-90FE-4D97-86A7-38CB4EF5ADB0} = {186F9095-9ADE-43F6-AA1F-DAA843DE065B}
+		{97B8AECF-841B-4A74-ADDB-0C5567D8382E} = {186F9095-9ADE-43F6-AA1F-DAA843DE065B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D56C130-3539-4768-B3C0-47A85921C5A8}

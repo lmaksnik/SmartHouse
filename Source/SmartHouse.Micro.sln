@@ -11,6 +11,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SHMicroNodeMcu", "Micro\SHM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AAsample", "AAsample", "{2D0D8EFB-C1DC-4682-BF23-947A0300D5AD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arduinoWebSockets-master", "D:\Users\m\Documents\Arduino\libraries\arduinoWebSockets-master\arduinoWebSockets-master.vcxitems", "{0A30F404-6432-4A7D-9F62-8AC4F2CFC214}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sketch1", "Sketch1\Sketch1.vcxproj", "{20710B20-1351-4C20-8D74-26461739250B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -29,6 +33,10 @@ Global
 		{2117ED7E-58AD-4EE0-81CE-B31C21D06EB7}.Debug|x86.Build.0 = Debug|Win32
 		{2117ED7E-58AD-4EE0-81CE-B31C21D06EB7}.Release|x86.ActiveCfg = Release|Win32
 		{2117ED7E-58AD-4EE0-81CE-B31C21D06EB7}.Release|x86.Build.0 = Release|Win32
+		{20710B20-1351-4C20-8D74-26461739250B}.Debug|x86.ActiveCfg = Debug|Win32
+		{20710B20-1351-4C20-8D74-26461739250B}.Debug|x86.Build.0 = Debug|Win32
+		{20710B20-1351-4C20-8D74-26461739250B}.Release|x86.ActiveCfg = Release|Win32
+		{20710B20-1351-4C20-8D74-26461739250B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

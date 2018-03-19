@@ -1,12 +1,57 @@
 ﻿// Configure bundling and minification for the project.
 // More info at https://go.microsoft.com/fwlink/?LinkId=808241
 [
-	{
+	/*{
 		"outputFileName": "wwwroot/css/site.min.css",
 		// An array of relative input file paths. Globbing patterns supported
 		"inputFiles": [
 			"wwwroot/css/site.css"
 		]
+	},*/
+	{
+		"outputFileName": "wwwroot/lib/Ext/modern/ext.js",
+		"inputFiles": [
+			"wwwroot/lib/Ext/modern/ext-modern-debug.js"
+		],
+		"minify": {
+			"enabled": false
+		}
+	},
+	{
+		"outputFileName": "wwwroot/lib/Ext/modern/modern/theme-ios/theme-ios.js",
+		"inputFiles": [
+			"wwwroot/lib/Ext/modern/modern/theme-ios/*.js"
+		],
+		"minify": {
+			"enabled": false
+		}
+	},
+	{
+		"outputFileName": "wwwroot/lib/Ext/modern/modern/theme-ios/theme-ios.css",
+		"inputFiles": [
+			"wwwroot/lib/Ext/modern/modern/theme-ios/*.css"
+		],
+		"minify": {
+			"enabled": false
+		}
+	},
+	{
+		"outputFileName": "wwwroot/lib/Ext/modern/modern/theme-ios/theme-triton.js",
+		"inputFiles": [
+			"wwwroot/lib/Ext/modern/modern/theme-triton/*.js"
+		],
+		"minify": {
+			"enabled": false
+		}
+	},
+	{
+		"outputFileName": "wwwroot/lib/Ext/modern/modern/theme-ios/theme-triton.css",
+		"inputFiles": [
+			"wwwroot/lib/Ext/modern/modern/theme-triton/*.css"
+		],
+		"minify": {
+			"enabled": false
+		}
 	} /*,
   {
     "outputFileName": "wwwroot/js/site.min.js",

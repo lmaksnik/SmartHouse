@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="DevExpress.XPO" Version="17.2.2-beta" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
     <PackageReference Include="Npgsql" Version="3.2.6" />
     <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
   </ItemGroup>
@@ -16,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\MX\git\Sources\Mx.Common\Mx.Common.csproj" />
     <ProjectReference Include="..\SmartHouse.Server.Common\SmartHouse.Server.Common.csproj" />
     <ProjectReference Include="..\SmartHouse.Server.Core\SmartHouse.Server.Core.csproj" />
     <ProjectReference Include="..\SmartHouse.Server.Data\SmartHouse.Server.Data.csproj" />
@@ -23,8 +25,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\js\" />
-    <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
 </Project>

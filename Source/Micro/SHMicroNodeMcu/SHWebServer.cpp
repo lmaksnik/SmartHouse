@@ -5,6 +5,7 @@
 #include "SHWebServer.h"
 
 
+
 const String HEADERAUTHORIZATION = "Authorization";
 const String ARGCMD = "cmd";
 
@@ -49,6 +50,8 @@ void SHWebServerClass::beginServer(const int port, TWebServerRequestFunction han
 	_handler = handler;
 
 	this->Server = ESP8266WebServer(port);
+
+
 
 	this->Server.on("/", handleRoot);
 

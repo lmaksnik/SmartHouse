@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 using DevExpress.Xpo;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using SmartHouse.Server.Core.WebScocket;
 using SmartHouse.Server.Data.Model.Entities;
 using SmartHouse.Server.Web.Models;
+using SmartHouse.Server.Web.WebSocket;
 
 namespace SmartHouse.Server.Web.Controllers {
 	public class HomeController : Controller {
+
+		protected ILogger<HomeController> Logger;
+
+		public HomeController(ILogger<HomeController> logger) {
+			Logger = logger;
+		}
+
 		public IActionResult Index() {
+			Logger.Log(LogLevel.Critical, new EventId(1, "тестЛог"), this, null, (dictionary, exception) => { return exception?.Message ?? "sdsdsdsds"; });
 			return View();
 		}
 

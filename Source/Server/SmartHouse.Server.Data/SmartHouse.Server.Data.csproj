@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="Model\Entities\Data\" />
+    <Folder Include="WebScocket\" />
   </ItemGroup>
 
 </Project>
